@@ -1,0 +1,382 @@
+:root {
+/* ## Colors */
+/* ### Primary */
+--veryDarkBlue: hsl(243, 87%, 12%);
+--desaturatedBlue: hsl(238, 22%, 44%);
+/* ### Accent */
+--brightBlue: hsl(224, 93%, 58%);
+--moderateCyan: hsl(170, 45%, 43%);
+/* ### Neutral */
+--lightGrayishBlue: hsl(240, 75%, 98%);
+-lightGray: hsl(0, 0%, 75%);
+}
+/* ## Typography */
+/* ### Headings, Call-to-actions, Header Navigation - Raleway -*/
+/* - Weights: 400, 700 */
+/* ### Body - Open Sans - */
+/* - Weights: 400 */
+
+body {
+    margin: 0;
+    font-family: Open Sans;
+    font-size: 16px;
+    color: var(--veryDarkBlue);
+}
+a {
+    text-decoration: none;
+    color: var(--veryDarkBlue);
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+.u-wrapper {
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content ul {
+    display: flex;
+    gap: 1rem;
+    font-size: .8rem;
+    font-family: 'Raleway';
+}
+.hero {
+    margin-bottom: 7rem;
+}
+
+.hero-img img {
+    max-width: 100%;
+}
+.u-h1 {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Raleway';
+    line-height: 1.5;
+}
+.hero-content p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .8rem;
+    border: 1px solid var(--veryDarkBlue);
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+}
+.form input::placeholder {
+    opacity: .2;
+}
+.btn {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: .8rem;
+    color: var(--lightGrayishBlue);
+    background: var(--brightBlue);
+    border-radius: .3rem;
+    font-weight: bold;
+}
+.work::before {
+    content: "";
+    background: url(../images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100px;
+    display: block;
+    position: absolute;
+    top: -8%;
+}
+
+.work {
+    padding-bottom: 2rem;
+    background: var(--lightGrayishBlue);
+    position: relative;
+}
+.work-img img {
+    max-width: 100%;
+    margin-top: 3rem;
+}
+.work-img {
+    margin-bottom: 5rem;
+}
+.work-content h4 {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Raleway';
+    margin-top: 0;
+}
+.work-content {
+    background: var(--lightGrayishBlue);
+    padding-bottom: 1rem ;
+}
+.work-content p {
+    font-size: .9rem;
+    color: var(--desaturatedBlue);
+}
+.testimony {
+    padding-bottom: 5rem;
+    background: var(--lightGrayishBlue);
+}
+.testimony aside {
+    text-align: center;
+    font-size: .8rem;
+    margin-bottom: 2rem;
+}
+.testimony aside a {
+    color: var(--moderateCyan);
+    display: inline-flex;
+    justify-content: center;
+    gap: .5rem;
+    padding: .2rem;
+    border-bottom: 1px solid var(--moderateCyan);
+}
+.testimony-card {
+    box-shadow: .5px .5px 15px 0px rgba(0, 0, 0, 0.2);
+    margin: 3rem;
+    padding: 1rem 1.5rem;
+    border-radius: .2rem;
+}
+.testimony-card p {
+    font-size: .65rem;
+    margin-top: .4rem;
+    line-height: 1.8;
+}
+.testimony-info {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.testimony-info img {
+    border-radius: 50%;
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.testimony-personal p {
+    margin: 0;
+    line-height: 1.5;
+}
+.testimony-personal p:first-child {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: .6rem;
+    letter-spacing: .05rem;
+}
+.testimony-personal p:last-child {
+    font-size: .5rem;
+}
+.about {
+    background: var(--veryDarkBlue);
+    color: #fff;
+}
+.access {
+    background: var(--desaturatedBlue);
+    padding: 3rem;
+}
+.u-h3 {
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 700;
+    margin-top: 0;
+}
+.access p {
+    text-align: center;
+    font-size: .9rem;
+    margin-bottom: 1.5rem;
+}
+.access-form input {
+    margin-bottom: .5rem;
+    font-size: .7rem;
+}
+.access-form .btn {
+    font-size: .7rem;
+}
+.contact {
+    padding: 3rem;
+    padding-bottom: 1rem;
+}
+.contact ul img {
+    margin-right: 1rem;
+}
+.contact li, 
+.terms li,
+.about-us li {
+    margin-bottom: 1rem;
+}
+.contact li a, 
+.terms li a,
+.about-us li a {
+    color: #fff;
+}
+.about-us {
+    padding: 0 3rem;
+}
+.terms {
+    padding: 1rem 3rem;
+}
+.footer {
+    background: var(--veryDarkBlue);
+    margin: 0;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin: 0;
+}
+.social-media ul li a {
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.footer p {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 1rem;
+}
+.footer p a {
+    color: var(--moderateCyan);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 768px ){
+    .header {
+        margin-top: 3rem;
+    }
+    .header-content img {
+        width: 10rem;
+        height: 3rem;
+    }
+    .header-content ul {
+        font-size: 1rem;
+        gap: 3rem;
+    }
+    .hero-flex {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+    .u-h1 {
+        text-align: initial;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .hero-content p {
+        text-align: initial;
+    }
+    .form input {
+        width: 48%;
+    }
+    .btn {
+        width: 48%;
+        float: right;
+        cursor: pointer;
+    }
+    .btn:hover {
+        opacity: .7;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);   
+        grid-template-rows: 250px 1fr;
+        justify-content: space-between;
+    }
+    .work {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+    .work-img {
+        display: block;
+    }
+    .work-content h4 {
+        font-size: 2rem;
+        text-align: inherit;
+        margin-top: 3rem;
+    }
+    .work-content p {
+        color: var(--veryDarkBlue);
+    }
+    .testimony aside {
+        margin-left: 3rem;
+        text-align: initial;
+    }
+    .testimony-card {
+        max-width: 350px;        
+    }
+    .testimony-card p {
+        font-size: .8rem;
+    }
+    .work::before {
+        display: none;
+    }
+    .curve::before {
+        content: "";
+        background: url(../images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 0;
+        width: 100%;
+        height: 100px;
+        display: block;
+    }
+    .about {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .access {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .u-h3 {
+        text-align: initial;
+        font-size: 2rem;
+    }
+    .access-info p {
+        text-align: initial;
+        max-width: 600px;
+    }
+    .access-form {
+        flex-grow: .5;
+    }
+    .access-form input {
+        width: 100%;
+    }
+    .access-form .btn {
+        float: left;
+    }
+    .contact, .about-us, .terms, .social-media {
+        justify-self: center;
+        align-self: center;
+    }
+    .about-us a:hover, .terms a:hover, .social-media a:hover {
+        color: var(--brightBlue);
+    }
+
+}
